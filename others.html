@@ -1,0 +1,42 @@
+<html>
+<!-- Diego Pineda -->
+<link rel='stylesheet' href='style_index.css'>
+<head>
+<H1>Other links</H1>
+</head>
+
+<body>
+<p>
+        <button onclick="changeappearance()">Change appearance to bright mode</button>
+    </p>
+    
+    <div class="popup" onclick="PopUpFunc()">Click me for help!
+        <span class="popuptext" id="myPopup">This will help the client</span>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="Warehouse.html">Warehouses</a>
+        <a href="StockGeneral.html">Stock</a>
+        <a href="clientsgeneral.html">Clients</a>
+        <a href="ProviderGeneral.html">Providers</a>
+        <a href="EmployeesGeneral.html">Employees</a>
+        <a href="others.html">Other elements</a>
+    </div>
+<ul>
+<li><a href="DistributionTrucks.html">See the distribution of trucks</a></li>
+<li><a href="maintenance.html">See list of logistic elements</a></li>
+<li><a href="addelements.html">Add a new logistic element</a></li>
+<li><a href="delelem.html">Delete a logistic element</a></li>
+</ul>
+</footer>
+<script>
+function changeappearance() {
+    document.getElementById("linken").innerHTML = "<link rel='stylesheet' href='styleBRIGHT.css' id='linken'>"
+}
+function PopUpFunc() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+</script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<!--Iñigo Arratibel-->
+		  <head>
+			<title>Employees</title>
+			<link rel='stylesheet' href='style_index.css'>
+		  </head>
+		  <body>
+		  <p>
+        <button onclick="changeappearance()">Change appearance to bright mode</button>
+    </p>
+    
+    <div class="popup" onclick="PopUpFunc()">Click me for help!
+        <span class="popuptext" id="myPopup">This will help the client</span>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="Warehouse.html">Warehouses</a>
+        <a href="StockGeneral.html">Stock</a>
+        <a href="clientsgeneral.html">Clients</a>
+        <a href="ProviderGeneral.html">Providers</a>
+        <a href="EmployeesGeneral.html">Employees</a>
+        <a href="others.html">Other elements</a>
+    </div>
+		  
+		<h1>Employees menu</h1>
+		<br> <br>
+		<ul>
+			<li> <a href="employees.html"> Employees Info </a> </li><br>
+			<li> <a href="Shifts.html"> Shifts </a> </li><br>
+			<li> <a href="modempl.html"> Modify Employee</a> </li><br>
+			<li> <a href="addempl.html"> Add a Employee </a> </li><br>
+			<li> <a href="DeleteEmployee.html"> Delete Employee </a> </li><br>
+			
+			
+		</ul>
+		<br> <br>
+
+	<br> <br>
+	<br> <br>
+	<a href="index.html">Return to menu</a>
+	<script>
+function changeappearance() {
+    document.getElementById("linken").innerHTML = "<link rel='stylesheet' href='styleBRIGHT.css' id='linken'>"
+}
+function PopUpFunc() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+</script>
+</html>

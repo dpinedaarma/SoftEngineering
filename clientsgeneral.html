@@ -1,0 +1,45 @@
+<html>
+<link rel='stylesheet' href='style_index.css'>
+<!--Peru Altube -->
+<head>
+<H1>Clients information</H1>
+</head>
+
+<body>
+<p>
+        <button onclick="changeappearance()">Change appearance to bright mode</button>
+    </p>
+    
+    <div class="popup" onclick="PopUpFunc()">Click me for help!
+        <span class="popuptext" id="myPopup">This will help the client</span>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="Warehouse.html">Warehouses</a>
+        <a href="StockGeneral.html">Stock</a>
+        <a href="clientsgeneral.html">Clients</a>
+        <a href="ProviderGeneral.html">Providers</a>
+        <a href="EmployeesGeneral.html">Employees</a>
+        <a href="others.html">Other elements</a>
+    </div>
+<ul>
+<li><a href="clients.html">Clients list</a></li>
+<li><a href="addclient.html">Add client</a></li>
+<li><a href="ModifyClients.html">Modify client</a></li>
+<li><a href="DeleteClients.html">Delete clients</a></li>
+<li><a href="Oders.html">Create an order</a></li>
+<li><a href="CostSheets.html">See an orders' costs</a></li>
+<li><a href="GeneratePDF.html">Create PDF of an order</a></li>
+</ul>
+</footer>
+<script>
+function changeappearance() {
+    document.getElementById("linken").innerHTML = "<link rel='stylesheet' href='styleBRIGHT.css' id='linken'>"
+}
+function PopUpFunc() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+</script>
+</html>

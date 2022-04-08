@@ -1,0 +1,79 @@
+
+<!DOCTYPE HTML>
+<html>
+		  <head>
+			<title>Packing List</title>
+			<link rel='stylesheet' href='style.css'>
+		  </head>
+		  <body>
+		<h1>Packing List</h1>
+		<h2>Select one order code to see its information and click the button down below to generate a PDF</h2>
+	<form method=GET>
+		<select id="OrdID" name="OrdID">
+
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			
+		</select>
+	<br><br>
+		<table border=1 >
+
+		<tr>
+		<td> Order ID</td>
+		<td><input disabled type="number" id="Oid" value="1"></td>
+		</tr>
+		<tr>
+		<td>Products</td>
+		<td><input disabled type="text" id="P1" value="Product 1"> <br>
+			<input disabled type="text" id="P2" value="Product 2"></td>
+		</tr>
+		<tr>
+		<td>Quantity</td>
+		<td><input disabled type="number" id="Q1" value="10"> <br>
+			<input disabled type="number" id="Q2" value="15"></td>
+		</tr>
+		<tr>
+		<td>Price</td>
+		<td><input disabled type="number" name="price" id="price" step="any" value="425.95">[€]</td>
+		</tr>
+		<tr>
+		<td>Delivery date</td>
+		<td><input disabled type="date" name="Ddate" id="Ddate"></td>
+		</tr>
+		
+		</table>
+	<br> <br>
+	<input type="submit" value="Download as PDF">
+		  </body>
+		  
+		  <center>
+			<table border=1>
+			<tr>
+			
+			<td> Product 1 </td>
+			<td> <image src="https://www.xenex.uy/imgs/productos/productos31_9943.jpg" alt="Product 1">
+			</td>
+			</tr>
+			<tr>
+			<td> Product 2 </td>
+			<td> <image src="http://www.elcopion.com/tbfth.php?w=256&h=256&src=http://www.starplus.es/media/images/fotosAC/ARCSAC3009AZ_2.jpg" alt="Product 2">
+			</td>
+			</tr>
+			</center>
+	</form>
+	<br> <br>
+	<br> <br>
+	<a href="index.html">Return to menu</a>
+	<a href="clientsgeneral.html">Return to Clients menu</a>
+	<footer>
+		<p>&copy; I&NtildeIGO ARRATIBEL</p>
+	</footer>
+</html>

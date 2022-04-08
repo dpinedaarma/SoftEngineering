@@ -1,0 +1,67 @@
+<HTML>
+<!--Nicolás Barado -->
+<HEAD>
+<TITLE> Orders </TITLE>
+</HEAD>
+<H2>Create a new Order</H2>
+<BODY>
+ <link rel='stylesheet' href='style.css' id="linken">
+<form method="get" action="stockcheck.html" name="order">
+    &nbsp;
+    <table border = "1">
+    
+            <tr>
+                <td>New Order</td>
+                <td><input type="text" name="IdOrder" size="3" /></td>
+            </tr>
+            <tr>
+                <td>Add products</td>
+				<td>
+						<input type="checkbox" id="product1" name="product1" value="Bike">
+						<label for="vehicle1"> Bike</label><br>						
+						<input type="checkbox" id="product2" name="product2" value="TV">
+						<label for="vehicle1"> TV</label><br>
+						<input type="checkbox" id="product3" name="product3" value="Iphone 6">
+						<label for="vehicle1"> Iphone 6</label><br>
+						<input type="checkbox" id="product4" name="product4" value="Wooden chair">
+						<label for="vehicle1"> Wooden Chair</label><br>
+						<input type="checkbox" id="product5" name="product5" value="Northface Coat">
+						<label for="vehicle1"> Northface Coat</label><br>
+               </td>
+			   <form method="get" action="stockcheck.html" name="order">
+			    <td><input type="submit" name="Show Stock" value= "Show Stock" size="40" /> </td>
+				</form>
+            </tr>
+			
+            <tr>
+                <td>Total Cost</td>
+                <td><input type="button" name="Total Cost" value= Total Cost size="40" /> <input type="text" name="Tvalue" size="40" /></td>
+            </tr>
+			<tr>
+				<td>Shipping Date</td><td><input type="date" id="Delivery date" name="Shipping Date " value="2022-03-30" min="2022-03-30" max="2025-12-31"></td>
+
+            </tr>
+			 <tr>
+             <td>From: </td><td><select name="Warehouse">
+								<option value="Warehouse1">Warehouse1 </option>
+								<option value="Warehouse2">Warehouse2</option>
+								<option value="Warehouse3">Warehouse3</option>
+								<option value="Warehouse4">Warehouse4</option>
+							</select>
+						
+				To:
+               <input type="text" name="Destinaion" size="3" /></td>
+
+            </tr>
+			
+            <tr>
+                <td colspan="2">	<INPUT TYPE="submit" value="Submit"></td>
+
+            </tr>
+		
+    </table>
+</form>
+</BODY>
+<a href="Menu.html">Return to menu</a>
+<a href="clientsgeneral.html">Return to Clients menu</a>
+</HTML>

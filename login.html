@@ -1,0 +1,71 @@
+<!Doctype html>
+<head> 
+    <link rel='stylesheet' href='style.css' id="linken">
+    <h1>Group 2 project</h1>  
+    <button class="login" onclick="window.location.href='login.html';">Login</button></head>
+
+
+<style>
+  p.knapp {
+    margin-left: -9%;
+  }
+  p.center {
+      
+      margin-left: 35%;
+  }
+/* Set a style for login button */
+button.login {
+  background-color: #33884fdc;
+  color: white;
+  padding: 14px 20px;
+  margin-top:-40px;
+  margin-left: 90%;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+}
+
+</style>
+<body>
+    <div class="popup" onclick="PopUpFunc()">Click me for help! 
+        <span class="popuptext" id="myPopup">This will help the client</span>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="apper.html">Product list</a>
+        <a href="Warehouse.html">Warehouses</a>
+        <a href="StockGeneral.html">Stock</a>
+        <a href="clientsgeneral.html">Clients</a>
+        <a href="ProviderGeneral.html">Providers</a>
+        <a href="EmployeesGeneral.html">Employees</a>
+        <a href="others.html">Other elements</a>
+    </div>
+    <h1>Login</h1>
+    <p class="center">
+        <input type="text" placeholder="Enter Username"></br>
+    <input type="password" placeholder="Enter Password"></br>
+    <button onclick="welcome()">Login</button>
+    </p>
+
+    <p class="knapp">
+      <button onclick="changeappearance()">Change appearance to bright mode</button>
+  </p>
+</body>
+<script>
+    //Dennis Ekman
+function changeappearance() {
+    document.getElementById("linken").innerHTML = "<link rel='stylesheet' href='styleBRIGHT.css' id='linken'>"
+}
+function PopUpFunc() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function welcome() {
+alert("Welcome John!");
+window.location.href='menu.html';
+
+}
+
+</script>
+
+</html>

@@ -1,0 +1,80 @@
+<!Doctype html>
+<head> 
+    <link rel='stylesheet' href='style.css' id="linken">
+    <h1>Group 2 project</h1>  
+    <button class="login" onclick="window.location.href='login.html';">Login</button></head>
+
+
+<style>
+    p.knapp {
+      margin-left: -9%;
+    }
+  /* Set a style for login button */
+  button.login {
+    background-color: #33884fdc;
+    color: white;
+    padding: 14px 20px;
+    margin-top:-40px;
+    margin-left: 90%;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  </style>
+<body>
+    
+    <div class="popup" onclick="PopUpFunc()">Click me for help!
+        <span class="popuptext" id="myPopup">This will help the client</span>
+      </div>
+      <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="apper.html">Product list</a>
+        <a href="Warehouse.html">Warehouses</a>
+        <a href="StockGeneral.html">Stock</a>
+        <a href="clientsgeneral.html">Clients</a>
+        <a href="ProviderGeneral.html">Providers</a>
+        <a href="EmployeesGeneral.html">Employees</a>
+        <a href="others.html">Other elements</a>
+    </div>
+    <p>
+   
+        <select id="sortby" value="Sort by">
+          <option>Alphabetical</option>
+          <option>Price</option>
+        </select>
+        <br>
+        <button onclick="window.location.href='sort.html';">Sort</button>
+        <button onclick="window.location.href='apper.html';">back</button>
+       
+    </p>
+    <p class="right">
+        <input placeholder="Search Product"><button onclick="window.location.href='hammare.html';">Search</button>
+    </p>
+
+    <table>
+    <p>Search results for "hammer"</p>   
+<tr id="no1">
+    <th>Image</th><th>Product name</th><th>Price</th>
+</tr>
+<tr id="no2">
+    <td><img src="hammer.jpg"></td><td>Hammer</td><td>20€</td>
+</tr>
+    </table>
+    <p class="knapp">
+        <button onclick="changeappearance()">Change appearance to bright mode</button>
+    </p>
+</body>
+<script>
+function changeappearance() {
+    document.getElementById("linken").innerHTML = "<link rel='stylesheet' href='styleBRIGHT.css' id='linken'>"
+}
+function PopUpFunc() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+//Dennis Ekman
+</script>
+
+</html>

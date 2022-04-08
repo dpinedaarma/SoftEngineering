@@ -1,0 +1,62 @@
+<HTML>
+<!-- Nicolás Barado -->
+<HEAD>
+<TITLE> Shifts </TITLE>
+</HEAD>
+
+<BODY>
+<H2>Distribution of Shifts</H2>
+ <link rel='stylesheet' href='style.css' id="linken">
+<form method="get" action="ShiftDate" name="order">
+	<table  border = "1">
+		<tr><td> Date</td><td align="left"><input type="date" id="Shift date" name="Shift Date " value="2022-03-30" min="2022-03-30" max="2030-12-31"></td></tr>
+		<tr> <td>Shift </td><td><select name="Shift">
+								<option value="Morning">Morning </option>
+								<option value="Afternoon">Afternoon</option>
+								<option value="Night">Night</option>
+							</select> </tr>
+	
+		
+		<tr> <td>Warehouse </td><td><select name="Warehouse">
+								<option value="Warehouse1">Warehouse1 </option>
+								<option value="Warehouse2">Warehouse2</option>
+								<option value="Warehouse3">Warehouse3</option>
+							</select> </tr>
+	
+		<tr>
+                <td colspan="2">	<INPUT TYPE="submit" value="Submit"></td>
+
+        </tr>
+	</table>
+</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+    <table border ="1">
+	<tr><td><b>EmployeesID</td><td><b>Time</td><td><b>Issues</td><td><b>IssueCode</td></tr>
+	<tr><td>1</td><td>8:00-16:00</td><td>Yes</td><td>32</td></tr>
+	<tr><td>37</td><td>16:00-24:00</td><td>No</td><td>7</td></tr>
+	<tr><td>23</td><td>0:00-8:00</td><td>No</td><td>12</td></tr>
+	
+	<form method="get" action="AddEmployee" name="order">
+	<tr><td><input type="submit" name="Add Employee" value= "Add Employee" size="40" /></td>
+	</form>
+	
+	<form method="get" action="RemoveEmployee" name="order">
+	<td><input type="submit" name="Remove Employee" value= "Remove Employee" size="40" /></td>
+	</form>
+	
+	<form method="get" action="ReportIssue" name="order">
+	<td><input type="submit" name="Report Issue" value= "Report Issue" size="40" /></td>
+	</form>
+	
+	</table>
+
+<BR>
+<a href="index.html" align= "left">Back to Menu</a>
+<a href="EmployeesGeneral.html" align="center">Return to employee information</a>
+
+</BODY>
+</HTML>

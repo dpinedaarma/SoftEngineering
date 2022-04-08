@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	
+		  <head>
+			<title>Add Elements</title>
+			<link rel='stylesheet' href='style.css'>
+		  </head>
+		  <body>
+		<h1>Add elements</h1>
+		<h2>Choose an element type and add it to the seleted warehouse</h2>
+		
+		<ol type="A">
+			<li>Shelves</li>
+			<li>Stacker crane</li>
+			<li>Pallet stacker</li>
+			<li>Scanner</li>
+		</ol>
+			
+	<form method=GET action="ModifyWarehouse">
+		<select id="WID" name="WID">
+
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			
+		</select>
+	<br><br>
+		<table border=1 >
+
+		<tr>
+		<td> Warehouse ID</td>
+		<td><input disabled type="number" id="Wid" value="1"></td>
+		</tr>
+		
+		<tr>
+		<td>Element type:</td>
+		<td><input type="text" id="type" value="A"></td>
+		</tr>
+		<tr>
+		<td>Quantity</td>
+		<td><input type="number" id="Q1" value="10"> <br>
+		</tr>
+		<tr>
+		<td>Price</td>
+		<td><input disabled type="number" name="price" id="price" value="500">[€]</td>
+		</tr>
+		
+		</table>
+	<br> <br>
+	<input type="submit" value="Add">
+		  </body>
+	
+	</form>
+	<br> <br>
+	<br> <br>
+	<a href="index.html">Return to menu</a>
+	<a href="Warehouse.html">Return to warehouse menu</a>
+	<footer>
+		<p>&copy; I&NtildeIGO ARRATIBEL</p>
+	</footer>
+</html>
